@@ -1,0 +1,81 @@
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    color: #2c3e50;
+    ;
+}
+
+h4 {
+    margin: 0;
+    color: #80addd;
+}
+
+h6 {
+    margin: 0;
+    color: #a1a3a5;
+}
+
+.menu {
+    width: 300px;
+    height: auto;
+    background: #163279;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.menu .btn {
+    display: block;
+    padding: 1rem;
+    color: aliceblue;
+    border-bottom: solid 1px #1b1b2f;
+    border-top: solid 1px #1f4068;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu .submenu {
+    /* background: #1b1b2f; */
+    background: #271b03;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .8s ease-out;
+}
+
+.menu .submenu a {
+    display: block;
+    padding: 1rem;
+    position: relative;
+    color: rgb(211, 151, 133);
+    text-decoration: none;
+}
+
+.menu .submenu a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 8px;
+    background: #ff002b;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.menu .submenu a:hover {
+    padding-left: calc(1rem+5px);
+}
+
+.menu .submenu a:hover::before {
+    opacity: 1;
+}
+
+.item:target .submenu {
+    max-height: 20rem;
+}

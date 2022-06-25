@@ -1,0 +1,323 @@
+/* FONT */
+@font-face {
+    font-family: ErasBoldITC;
+    src: url(../fonts/ErasBoldITC.ttf);
+}
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: ErasBoldITC;
+}
+
+/* BODY */
+body {
+    margin: 0;
+}
+
+.uni-padding {
+    padding: 0 7%;
+}
+
+#topbar {
+    background-color: #576574;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    overflow: auto;
+}
+
+#tollfree {
+    float: left;
+    color: #fdfdfd;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#socialicon {
+    float: right;
+}
+
+.fa-brands {
+    background-color: #fdfdfd;
+    color: #576574;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+
+/* LOGO BAR */
+#logobar img {
+    width: 200px;
+    /* margin: 25px 0; */
+}
+
+/* NAVBAR */
+#navbar {
+    background-color: #ee5253;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    display: inline-block;
+    padding: 18px 0px;
+    padding-right: 35px;
+}
+
+#navbar ul li a {
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* POSTER */
+#poster {
+    background-image: url(../images/banner.png);
+    height: 500px;
+    background-position: center;
+    background-size: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fdfdfd;
+    flex-direction: column;
+}
+
+#poster h1 {
+    font-size: 50px;
+}
+
+#poster p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* WHY US */
+#whysection {
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+.red-heading {
+    color: #ee5253;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.section33 {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px 0px 50px;
+    box-sizing: border-box;
+}
+
+.section33 h2 {
+    color: #ee5253;
+}
+
+.section33 p {
+    color: #363636;
+}
+
+
+/* CONTACT */
+#contact-container {
+    background-color: #ee5253;
+    color: #fdfdfd;
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.section70 {
+    width: 70%;
+    float: left;
+}
+
+.section30 {
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding-top: 70px;
+}
+
+#contact-btn {
+    background-color: #fdfdfd;
+    color: #ee5253;
+    padding: 15px 50px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* BLOG */
+.section33 img {
+    /* max-width: 100px; */
+}
+
+.section33 a {
+    color: #ee5253;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: ErasBoldITC;
+    font-size: 14px;
+}
+
+
+/* SUBSCRIBE */
+#subscribe-section {
+    background-color: #ee5253;
+    color: #fdfdfd;
+    overflow: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section50 {
+    width: 50%;
+    float: left;
+}
+
+.section50 h2 {
+    font-size: 35px;
+    text-align: right;
+    padding-right: 120px;
+}
+
+.section50 form {
+    padding-top: 25px;
+}
+
+.section50 input[type="text"] {
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #ee5253;
+    margin-right: 20px;
+    border: 0px;
+    width: 45%;
+}
+
+.section50 input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #ee5253;
+    border: 0px;
+}
+
+/* FOOTER */
+#imp-link {
+    background-color: #576574;
+    color: #fdfdfd;
+    overflow: auto;
+}
+
+.div33 {
+    width: 33.33%;
+    float: left;
+    padding: 25px 50px;
+    box-sizing: border-box;
+}
+
+.div33 h3 {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    font-weight: normal;
+}
+
+#footer-menu {
+    list-style-type: none;
+    padding: 0px;
+}
+
+#footer-menu li {
+    padding-bottom: 10px;
+}
+
+#footer-menu li a {
+    text-decoration: none;
+    color: #fdfdfd;
+}
+
+
+#footer-menu-container {
+    padding-left: 100px;
+}
+
+/* COPYRIGHT */
+#copyright {
+    text-align: center;
+    background-color: #222f3e;
+    color: #cbcbcb;
+    padding: 10px;
+}
+
+
+/* RESPONSIVE DESIGN [IPAD] */
+@media only screen and (max-width: 768px) {
+    #navbar ul li {
+        padding: 18px 0px;
+        padding-right: 20px;
+    }
+
+    .section70 {
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+}
+
+/* RESPONSIVE DESIGN [MOBILE] */
+@media only screen and (max-width: 730px) {
+    #logobar {
+        text-align: center;
+    }
+
+    #poster h1 {
+        font-size: 30px;
+    }
+
+    .section33, .section70, .section30, .section50, .div33 {
+        width: 100%;
+    }
+
+    .section70 {
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .section30 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .section33 a {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .section50 h2 {
+        font-size: 30px;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .div33 {
+
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    #footer-menu-container {
+        padding-left: 0px;
+    }
+}
